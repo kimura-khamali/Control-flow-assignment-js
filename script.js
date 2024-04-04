@@ -20,11 +20,11 @@ while (index < arrNum.length) {
 
 /*Write a function that takes in a an array of strings and use a continue statement when the item is at the second index: let fruits= ['apple','plum','banana','strawberries','kiwi']*/
 let fruits = ['apple', 'plum', 'banana', 'strawberries', 'kiwi'];
-function skipIndex(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (i === 1) 
+function skipIndex() {
+    for (let i = 0; i < fruits.length; i++) {
+        if (i === 2) 
         continue;
-        console.log(arr[i]);
+        console.log(fruits[i]);
     }
 }
 skipIndex(fruits);
@@ -48,6 +48,10 @@ function store() {
         reversed += a[i];
         i--;
     }
-    console.log(reversed);
+    return reversed;
 }
-store();
+console.log(store());
+
+
+
+
